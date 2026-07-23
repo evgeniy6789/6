@@ -67,487 +67,476 @@
             font-weight: bold;
         }
 
-.dark-mode {
-    color:#f8fafc !important;
-    background:#020617 !important;
-    position:relative;
-    overflow-x:hidden;
-}
+        .dark-mode {
+            color: #f8fafc !important;
+            background: #020617 !important;
+            position: relative;
+            overflow-x: hidden;
+        }
 
 
 
-/* 🌌 Галактический фон */
-.dark-mode::before {
+        /* 🌌 Галактический фон */
+        .dark-mode::before {
 
-    content:"";
+            content: "";
 
-    position:fixed;
+            position: fixed;
 
-    inset:-40%;
+            inset: -40%;
 
-    background:
-        radial-gradient(circle at 20% 25%,
-        rgba(124,58,237,.45),
-        transparent 30%),
+            background:
+                radial-gradient(circle at 20% 25%,
+                    rgba(124, 58, 237, .45),
+                    transparent 30%),
 
-        radial-gradient(circle at 80% 70%,
-        rgba(14,165,233,.4),
-        transparent 30%),
+                radial-gradient(circle at 80% 70%,
+                    rgba(14, 165, 233, .4),
+                    transparent 30%),
 
-        radial-gradient(circle at 50% 50%,
-        rgba(236,72,153,.25),
-        transparent 35%);
+                radial-gradient(circle at 50% 50%,
+                    rgba(236, 72, 153, .25),
+                    transparent 35%);
 
 
-    filter:blur(80px);
+            filter: blur(80px);
 
-    animation:
-    galaxyMove 25s ease-in-out infinite alternate;
+            animation:
+                galaxyMove 25s ease-in-out infinite alternate;
 
 
-    z-index:-2;
+            z-index: -2;
 
-}
+        }
 
 
 
 
-/* ⭐ Звёзды */
-.dark-mode::after {
+        /* ⭐ Звёзды */
+        .dark-mode::after {
 
-    content:"";
+            content: "";
 
-    position:fixed;
+            position: fixed;
 
-    inset:0;
+            inset: 0;
 
 
-    background-image:
+            background-image:
 
-    radial-gradient(white 1px, transparent 1px),
+                radial-gradient(white 1px, transparent 1px),
 
-    radial-gradient(#38bdf8 1px, transparent 1px),
+                radial-gradient(#38bdf8 1px, transparent 1px),
 
-    radial-gradient(#f472b6 1px, transparent 1px);
+                radial-gradient(#f472b6 1px, transparent 1px);
 
 
 
-    background-size:
+            background-size:
 
-    90px 90px,
+                90px 90px,
 
-    150px 150px,
+                150px 150px,
 
-    220px 220px;
+                220px 220px;
 
 
 
-    opacity:.35;
+            opacity: .35;
 
 
-    animation:
-    starsMove 50s linear infinite;
+            animation:
+                starsMove 50s linear infinite;
 
 
-    z-index:-1;
+            z-index: -1;
 
-}
+        }
 
 
 
 
 
-/* 🛒 Карточки товаров */
+        /* 🛒 Карточки товаров */
 
-.dark-mode .bg-white {
+        .dark-mode .bg-white {
 
 
-    background:
-    rgba(15,23,42,.85)
-    !important;
+            background:
+                rgba(15, 23, 42, .85) !important;
 
 
-    color:white !important;
+            color: white !important;
 
 
-    border:
-    1px solid rgba(148,163,184,.25)
-    !important;
+            border:
+                1px solid rgba(148, 163, 184, .25) !important;
 
 
-    backdrop-filter:
-    blur(15px);
+            backdrop-filter:
+                blur(15px);
 
 
 
-    box-shadow:
+            box-shadow:
 
-    0 10px 30px rgba(0,0,0,.35);
+                0 10px 30px rgba(0, 0, 0, .35);
 
 
 
-    transition:.3s ease;
+            transition: .3s ease;
 
-}
+        }
 
 
 
-/* ✨ Наведение на товар */
+        /* ✨ Наведение на товар */
 
-.dark-mode .bg-white:hover {
+        .dark-mode .bg-white:hover {
 
 
-    background:
+            background:
 
-    linear-gradient(
-        90deg,
-        rgba(56,189,248,.12),
-        rgba(139,92,246,.12)
-    )
-    !important;
+                linear-gradient(90deg,
+                    rgba(56, 189, 248, .12),
+                    rgba(139, 92, 246, .12)) !important;
 
 
 
-    border-color:
+            border-color:
 
-    rgba(56,189,248,.5)
-    !important;
+                rgba(56, 189, 248, .5) !important;
 
 
 
-    transform:
+            transform:
 
-    translateY(-2px);
+                translateY(-2px);
 
 
 
-    box-shadow:
+            box-shadow:
 
-    0 0 25px rgba(56,189,248,.25);
+                0 0 25px rgba(56, 189, 248, .25);
 
-}
+        }
 
 
 
 
-/* Названия товаров */
+        /* Названия товаров */
 
-.dark-mode .text-slate-900 {
+        .dark-mode .text-slate-900 {
 
-    color:#ffffff !important;
+            color: #ffffff !important;
 
-}
+        }
 
 
 
-/* Описание */
+        /* Описание */
 
-.dark-mode .text-slate-500 {
+        .dark-mode .text-slate-500 {
 
-    color:#94a3b8 !important;
+            color: #94a3b8 !important;
 
-}
+        }
 
 
 
-/* Обычный текст */
+        /* Обычный текст */
 
-.dark-mode .text-slate-700 {
+        .dark-mode .text-slate-700 {
 
-    color:#e2e8f0 !important;
+            color: #e2e8f0 !important;
 
-}
+        }
 
 
 
 
-/* 🔍 Поля */
+        /* 🔍 Поля */
 
-.dark-mode input,
-.dark-mode select,
-.dark-mode textarea {
+        .dark-mode input,
+        .dark-mode select,
+        .dark-mode textarea {
 
 
-    background:
-    rgba(15,23,42,.9)
-    !important;
+            background:
+                rgba(15, 23, 42, .9) !important;
 
 
-    color:white !important;
+            color: white !important;
 
 
-    border:
+            border:
 
-    1px solid #334155
-    !important;
+                1px solid #334155 !important;
 
 
-}
+        }
 
 
 
-.dark-mode input:focus,
-.dark-mode select:focus,
-.dark-mode textarea:focus {
+        .dark-mode input:focus,
+        .dark-mode select:focus,
+        .dark-mode textarea:focus {
 
 
-    border-color:#38bdf8 !important;
+            border-color: #38bdf8 !important;
 
 
-    box-shadow:
+            box-shadow:
 
-    0 0 15px rgba(56,189,248,.35);
+                0 0 15px rgba(56, 189, 248, .35);
 
-}
+        }
 
 
 
 
-/* Серые кнопки */
+        /* Серые кнопки */
 
-.dark-mode .bg-slate-100 {
+        .dark-mode .bg-slate-100 {
 
-    background:#1e293b !important;
+            background: #1e293b !important;
 
-    color:white !important;
+            color: white !important;
 
-}
+        }
 
 
 
 
-.dark-mode .bg-slate-200 {
+        .dark-mode .bg-slate-200 {
 
-    background:#334155 !important;
+            background: #334155 !important;
 
-    color:white !important;
+            color: white !important;
 
-}
+        }
 
 
 
 
 
-/* Переключатели наличия */
+        /* Переключатели наличия */
 
-.dark-mode button {
+        .dark-mode button {
 
 
-    transition:.25s ease;
+            transition: .25s ease;
 
-}
+        }
 
 
 
-.dark-mode button:hover {
+        .dark-mode button:hover {
 
 
-    filter:
-    brightness(1.2);
+            filter:
+                brightness(1.2);
 
 
-    transform:
-    translateY(-1px);
+            transform:
+                translateY(-1px);
 
-}
+        }
 
 
 
 
-/* 🟦 Строки таблицы */
+        /* 🟦 Строки таблицы */
 
-.dark-mode tr:hover {
+        .dark-mode tr:hover {
 
 
-    background:
+            background:
 
-    rgba(56,189,248,.08)
-    !important;
+                rgba(56, 189, 248, .08) !important;
 
 
-}
+        }
 
 
 
-/* убираем белую полосу */
+        /* убираем белую полосу */
 
-.dark-mode tbody tr:hover td {
+        .dark-mode tbody tr:hover td {
 
 
-    background:
-    transparent !important;
+            background:
+                transparent !important;
 
-}
+        }
 
 
 
 
-/* 🌌 Движение галактики */
+        /* 🌌 Движение галактики */
 
-@keyframes galaxyMove {
+        @keyframes galaxyMove {
 
 
-    0% {
+            0% {
 
-        transform:
-        rotate(0deg)
-        scale(1);
+                transform:
+                    rotate(0deg) scale(1);
 
-    }
+            }
 
 
-    100% {
+            100% {
 
-        transform:
-        rotate(20deg)
-        scale(1.25);
+                transform:
+                    rotate(20deg) scale(1.25);
 
-    }
+            }
 
 
-}
+        }
 
 
 
 
 
-/* ⭐ Движение звёзд */
+        /* ⭐ Движение звёзд */
 
-@keyframes starsMove {
+        @keyframes starsMove {
 
 
-    from {
+            from {
 
-        background-position:
+                background-position:
 
-        0 0,
+                    0 0,
 
-        40px 60px,
+                    40px 60px,
 
-        100px 30px;
+                    100px 30px;
 
-    }
+            }
 
 
 
-    to {
+            to {
 
-        background-position:
+                background-position:
 
-        0 500px,
+                    0 500px,
 
-        40px 700px,
+                    40px 700px,
 
-        100px 900px;
+                    100px 900px;
 
-    }
+            }
 
 
-}
+        }
 
-/* Светлая тема */
-.light-mode {
-    color: #1e293b !important;
-    background: #f8fafc !important;
-    position: relative;
-    overflow-x: hidden;
-}
+        /* Светлая тема */
+        .light-mode {
+            color: #1e293b !important;
+            background: #f8fafc !important;
+            position: relative;
+            overflow-x: hidden;
+        }
 
 
-/* Солнечное свечение */
-.light-mode::before {
-    content: "";
-    position: fixed;
-    inset: -40%;
-    background:
-        radial-gradient(circle at 20% 20%, rgba(251,191,36,0.35), transparent 25%),
-        radial-gradient(circle at 80% 30%, rgba(14,165,233,0.25), transparent 25%),
-        radial-gradient(circle at 50% 80%, rgba(34,197,94,0.20), transparent 30%);
-    filter: blur(70px);
-    animation: lightMove 20s infinite alternate;
-    z-index: -2;
-}
+        /* Солнечное свечение */
+        .light-mode::before {
+            content: "";
+            position: fixed;
+            inset: -40%;
+            background:
+                radial-gradient(circle at 20% 20%, rgba(251, 191, 36, 0.35), transparent 25%),
+                radial-gradient(circle at 80% 30%, rgba(14, 165, 233, 0.25), transparent 25%),
+                radial-gradient(circle at 50% 80%, rgba(34, 197, 94, 0.20), transparent 30%);
+            filter: blur(70px);
+            animation: lightMove 20s infinite alternate;
+            z-index: -2;
+        }
 
 
-/* Лёгкие частицы */
-.light-mode::after {
-    content: "";
-    position: fixed;
-    inset: 0;
-    background-image:
-        radial-gradient(#fbbf24 1px, transparent 1px),
-        radial-gradient(#38bdf8 1px, transparent 1px);
+        /* Лёгкие частицы */
+        .light-mode::after {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background-image:
+                radial-gradient(#fbbf24 1px, transparent 1px),
+                radial-gradient(#38bdf8 1px, transparent 1px);
 
-    background-size:
-        120px 120px,
-        180px 180px;
+            background-size:
+                120px 120px,
+                180px 180px;
 
-    opacity: 0.25;
-    animation: dustMove 30s linear infinite;
-    z-index: -1;
-}
+            opacity: 0.25;
+            animation: dustMove 30s linear infinite;
+            z-index: -1;
+        }
 
 
-/* Карточки в светлой теме */
-.light-mode .bg-white {
-    background: rgba(255,255,255,0.75) !important;
-    backdrop-filter: blur(12px);
-    border-color: #fde68a !important;
-    box-shadow: 0 10px 30px rgba(251,191,36,0.12);
-}
+        /* Карточки в светлой теме */
+        .light-mode .bg-white {
+            background: rgba(255, 255, 255, 0.75) !important;
+            backdrop-filter: blur(12px);
+            border-color: #fde68a !important;
+            box-shadow: 0 10px 30px rgba(251, 191, 36, 0.12);
+        }
 
 
-/* Заголовки */
-.light-mode .text-slate-900 {
-    color: #78350f !important;
-}
+        /* Заголовки */
+        .light-mode .text-slate-900 {
+            color: #78350f !important;
+        }
 
 
-/* Описание */
-.light-mode .text-slate-500 {
-    color: #64748b !important;
-}
+        /* Описание */
+        .light-mode .text-slate-500 {
+            color: #64748b !important;
+        }
 
 
-/* Поля */
-.light-mode input,
-.light-mode select,
-.light-mode textarea {
-    background: rgba(255,255,255,0.8) !important;
-    border-color: #fcd34d !important;
-}
+        /* Поля */
+        .light-mode input,
+        .light-mode select,
+        .light-mode textarea {
+            background: rgba(255, 255, 255, 0.8) !important;
+            border-color: #fcd34d !important;
+        }
 
 
-/* Движение света */
-@keyframes lightMove {
+        /* Движение света */
+        @keyframes lightMove {
 
-    0% {
-        transform: rotate(0deg) scale(1);
-    }
+            0% {
+                transform: rotate(0deg) scale(1);
+            }
 
-    100% {
-        transform: rotate(15deg) scale(1.15);
-    }
+            100% {
+                transform: rotate(15deg) scale(1.15);
+            }
 
-}
+        }
 
 
-/* Движение частиц */
-@keyframes dustMove {
+        /* Движение частиц */
+        @keyframes dustMove {
 
-    from {
-        background-position:
-            0 0,
-            0 0;
-    }
+            from {
+                background-position:
+                    0 0,
+                    0 0;
+            }
 
-    to {
-        background-position:
-            0 300px,
-            200px 400px;
-    }
+            to {
+                background-position:
+                    0 300px,
+                    200px 400px;
+            }
 
-}
+        }
     </style>
 </head>
 
@@ -593,7 +582,7 @@
                         class="px-4 py-2 rounded-lg bg-slate-800 text-slate-200 font-semibold text-sm">
                         🌙 Тема
                     </button>
-                
+
                 <button onclick="switchTab('admin')" id="btn-admin"
                     class="hidden px-4 py-2 rounded-lg bg-slate-800 text-slate-200 font-semibold text-sm transition hover:bg-slate-700 flex items-center gap-2 border border-slate-700">
                     <i class="fa-solid fa-sliders"></i> Управление
@@ -1403,33 +1392,33 @@
             initAuth();
         };
 
-window.toggleTheme = function() {
+        window.toggleTheme = function () {
 
-    const isDark = document.body.classList.contains("dark-mode");
+            const isDark = document.body.classList.contains("dark-mode");
 
-    if (isDark) {
-        document.body.classList.remove("dark-mode");
-        document.body.classList.add("light-mode");
-        localStorage.setItem("theme", "light");
-    } else {
-        document.body.classList.remove("light-mode");
-        document.body.classList.add("dark-mode");
-        localStorage.setItem("theme", "dark");
-    }
+            if (isDark) {
+                document.body.classList.remove("dark-mode");
+                document.body.classList.add("light-mode");
+                localStorage.setItem("theme", "light");
+            } else {
+                document.body.classList.remove("light-mode");
+                document.body.classList.add("dark-mode");
+                localStorage.setItem("theme", "dark");
+            }
 
-};
+        };
 
-window.addEventListener("load", function() {
+        window.addEventListener("load", function () {
 
-    const savedTheme = localStorage.getItem("theme");
+            const savedTheme = localStorage.getItem("theme");
 
-    if (savedTheme === "dark") {
-        document.body.classList.add("dark-mode");
-    } else {
-        document.body.classList.add("light-mode");
-    }
+            if (savedTheme === "dark") {
+                document.body.classList.add("dark-mode");
+            } else {
+                document.body.classList.add("light-mode");
+            }
 
-});
+        });
     </script>
 </body>
 </html>
